@@ -1,0 +1,5 @@
+autograd==1.4
+numpy==1.22.4
+pyvista==0.35.1
+cmocean==2.0
+colorcet==3.0.0
