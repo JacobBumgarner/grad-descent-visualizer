@@ -1,0 +1,28 @@
+repos:
+- repo: https://github.com/omnilib/ufmt
+  rev: v1.3.1
+  hooks:
+  - id: ufmt
+    exclude: __init__.py
+
+- repo: https://gitlab.com/PyCQA/flake8
+  rev: 3.9.2
+  hooks:
+  - id: flake8
+    additional_dependencies: [
+      "flake8-black==0.3.2",
+      "flake8-isort==4.1.1",
+      "flake8-quotes==3.3.1",
+    ]
+
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.1.0
+  hooks:
+  - id: codespell
+    description: Checks for typos and mispellings in text files
+
+- repo: https://github.com/pycqa/pydocstyle
+  rev: 6.1.1
+  hooks:
+  - id: pydocstyle
+    additional_dependencies: [toml==0.10.2]
