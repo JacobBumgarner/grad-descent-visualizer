@@ -4,6 +4,7 @@ __pycache__/
 # Distribution
 dist/
 *.egg
+*.egg-info/
 
 # VSCode
 .vscode/
