@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grad_descent_visualizer"
+version = "0.1.1"
+dependencies = [
+    "autograd==1.4",
+    "numpy==1.22.4",
+    "pyvista==0.35.1",
+    "cmocean==2.0",
+    "colorcet==3.0.0"
+]
+authors =[
+    {name="Jacob Bumgarner", email="jacobbum21@gmail.com"}
+]
+description = "A package for visualizing test functions and gradient descent."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+GitHub = "https://github.com/JacobBumgarner/grad-descent-visualizer"
