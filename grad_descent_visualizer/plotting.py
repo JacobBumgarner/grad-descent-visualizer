@@ -3,10 +3,11 @@ import warnings
 from time import perf_counter as pf
 from typing import Callable, Sequence, Union
 
-import descent
 import numpy as np
 import pyvista as pv
-from test_functions import himmelblau_function
+
+from . import descent
+from .test_functions import himmelblau_function
 
 
 class DescentPlotter:
