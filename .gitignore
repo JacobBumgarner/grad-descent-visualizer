@@ -6,6 +6,7 @@ dist/
 
 # VSCode
 .vscode/
+*.code_workspace
 
 # Other
 .DS_Store
