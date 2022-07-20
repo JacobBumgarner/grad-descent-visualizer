@@ -1,17 +1,15 @@
-from time import perf_counter as pf
+"""The auto-grad and descent functions for computing gradient descent."""
 from typing import Callable, Sequence, Union
 
 import autograd.numpy as np
 from autograd import elementwise_grad, grad
-
-from test_functions import himmelblau_function
 
 
 def prep_array_for_descent(variables: Union[Sequence[float], np.ndarray]) -> np.ndarray:
     """Prepare an array of XY points for a gradient descent.
 
     Args:
-        varaibles (Union[Sequence[float], np.ndarray]): The XY points.
+        variables (Union[Sequence[float], np.ndarray]): The XY points.
 
     Returns:
         np.ndarray: A 2D array of XY points arranged row-wise.
@@ -38,7 +36,7 @@ def prep_array_for_descent(variables: Union[Sequence[float], np.ndarray]) -> np.
 
 
 def save_descent_snapshot(variables: np.ndarray, equation: Callable) -> np.ndarray:
-    """Generates an array that stores the snapshot of the variables and their costs.
+    """Generate an array that stores the snapshot of the variables and their costs.
 
     Args:
         variables (np.ndarray): The 2D array of the variables.
@@ -66,7 +64,6 @@ def differentiate(
     Returns:
         Union[Callable, Sequence[Callable]]: A list of the differential function(s).
     """
-
     function_parameters = equation.__code__.co_argcount
 
     if element_wise is False:
@@ -99,7 +96,7 @@ def compute_gradients(
     """
     if len(differentials) != variables.shape[0]:
         raise ValueError(
-            "The number of differntial functions must match the number of input "
+            "The number of differential functions must match the number of input "
             "variables."
         )
 

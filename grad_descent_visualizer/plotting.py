@@ -1,5 +1,5 @@
+"""The plotter class for function and descent visualization."""
 import warnings
-from copy import deepcopy
 from time import perf_counter as pf
 from typing import Callable, Sequence, Union
 
@@ -57,7 +57,7 @@ class DescentPlotter:
         return
 
     def create_plotter(self, off_screen: bool = False) -> None:
-        """Creates a plotter from the input settings.
+        """Create a plotter from the input settings.
 
         Args:
             off_screen(bool, optional): Render the plotter off screen. Defaults to
@@ -69,10 +69,12 @@ class DescentPlotter:
 
     @property
     def test_function(self):
+        """The test_function attribute."""
         return self._test_function
 
     @test_function.setter
     def test_function(self, test_function: Callable):
+        """The setter for the test_function attribute."""
         if isinstance(test_function, Callable):
             self._test_function = test_function
         else:
@@ -184,7 +186,7 @@ class DescentPlotter:
         contour_line_width: float = 3,
         save_actor: bool = True,
     ) -> None:
-        """Plots an input function at a specified resolution.
+        """Plot an input function at a specified resolution.
 
         Args:
             clim (list, optional): The colormap for the function. Defaults to None.

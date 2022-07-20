@@ -1,3 +1,4 @@
+"""Example test functions for landscape and descent visualizations."""
 from typing import Union
 
 import autograd.numpy as np
@@ -140,7 +141,6 @@ def zakharov_function(
     Returns:
         Union[float, np.ndarray]: A float or np.ndarray of floats.
     """
-
     z_a = x**2 + y**2
     z_b = (0.5 * 1 * x + 0.5 * 2 * y) ** 2
     z_c = (0.5 * 1 * x + 0.5 * 2 * y) ** 4
