@@ -2,7 +2,7 @@
 exclude = .git,__pycache__,build,dist,hooks
 per-file-ignores =
     __init__.py:F401,F403
-    main.py:F401
+    example.py:F401
 ignore =
     # Double quotes found but single quotes preferred. Deffering to black here
     Q000,
