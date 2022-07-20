@@ -6,8 +6,12 @@ Email: jacobbum21@gmail.com
 
 import numpy as np
 
-from plotting import DescentPlotter
-from test_functions import himmelblau_function, six_hump_camel_function, sphere_function
+from grad_descent_visualizer import DescentPlotter
+from grad_descent_visualizer.test_functions import (
+    himmelblau_function,
+    six_hump_camel_function,
+    sphere_function,
+)
 
 # Make sure to check out the other functions too!
 
