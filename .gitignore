@@ -1,2 +1,11 @@
+# Byte-compiled
+__pycache__/
 
+# Distribution
+dist/
+
+# VSCode
+.vscode/
+
+# Other
 .DS_Store
