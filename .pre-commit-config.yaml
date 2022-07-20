@@ -26,3 +26,4 @@ repos:
   hooks:
   - id: pydocstyle
     additional_dependencies: [toml==0.10.2]
+    exclude: tests/
