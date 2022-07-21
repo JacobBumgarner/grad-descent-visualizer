@@ -13,3 +13,4 @@ dist/
 # Other
 .DS_Store
 test_release.sh
+release.sh
