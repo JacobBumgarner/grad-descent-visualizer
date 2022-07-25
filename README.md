@@ -30,6 +30,7 @@ plotter.generate_gradient_descent_path([x, y])  # examine the point path
 plotter.plot_point_paths()  # show the path
 plotter.show()  # visualize the scene
 ```
+<img width="50%" alt="Example 1" src="https://user-images.githubusercontent.com/70919881/180888041-69bc81b1-4071-4616-823a-c8e74dcaf3ae.png">
 
 **Example 2: Plot the gradient vectors of a function**
 ```python
@@ -59,6 +60,8 @@ plotter.plot_gradient_vectors(
 
 plotter.show()  # show the scene
 ```
+<img width="50%" alt="Example 2" src="https://user-images.githubusercontent.com/70919881/180888093-6a3707cf-d031-424c-bd92-e2a0e22660ff.png">
+
 
 **Example 3 - Generate a Gradient Descent Animation**
 ```python
@@ -103,5 +106,5 @@ plotter.animate_point_descent(
 
 ```
 
-
+<img width="50%" alt="Example 3" src="https://user-images.githubusercontent.com/70919881/180888105-9e0b8aa5-74c6-4cb7-a648-1935ac98ab5b.png">
 
