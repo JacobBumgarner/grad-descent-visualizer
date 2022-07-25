@@ -178,6 +178,7 @@ class DescentPlotter:
 
     def plot_function(
         self,
+        test_function: Callable = None,
         cmap: str = "viridis",
         clim: list = None,
         color: str = None,
@@ -204,6 +205,10 @@ class DescentPlotter:
             save_actor (bool, optional): Whether to save the mesh and kwargs used to
                 generate the actor. Defaults to True.
         """
+        # Set the test function
+        if test_function is not None:
+            self.test_function = test_function
+
         X = np.linspace(
             self.axes_ranges[0], self.axes_ranges[1], self.grid_plotting_resolution
         )
