@@ -73,7 +73,7 @@ def matyas_function(
     return z
 
 
-def three_camel_hump(
+def three_camel_hump_function(
     x: Union[float, np.ndarray], y: Union[float, np.ndarray]
 ) -> Union[float, np.ndarray]:
     """Three Camel Hump function.
