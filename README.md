@@ -1,5 +1,5 @@
 # Grad-Descent-Visualizer
-A small package used to visualize test function landscapes and gradient descent.
+A package used to explore and visualize the gradient descent of function landscapes.
 
 This package was highlighted in my [Medium post](https://medium.com/@jacobbumgarner/breaking-it-down-gradient-descent-b94c124f1dfd) on gradient descent.
 
