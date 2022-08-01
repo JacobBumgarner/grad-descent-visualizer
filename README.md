@@ -1,7 +1,7 @@
 # Grad-Descent-Visualizer
 A Python package used to visualize the gradient descent of function landscapes.
 
-This package was highlighted in my article on gradient descent published in [Towards AI](https://medium.com/@jacobbumgarner/breaking-it-down-gradient-descent-b94c124f1dfd).
+This package was highlighted in my article on gradient descent that was published in [Towards AI](https://medium.com/@jacobbumgarner/breaking-it-down-gradient-descent-b94c124f1dfd).
 
 https://user-images.githubusercontent.com/70919881/180077858-14bd8b91-c189-4e52-80d4-332ae5ca2db4.mov
 
